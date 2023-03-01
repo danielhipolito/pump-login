@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.white {
+  background-color: white !important;
+}
+
+.react-tel-input .form-control,
+.react-datepicker__input-container .form-control {
+  width: 100% !important;
+  border: 1px solid white !important;
+  margin-bottom: 0.5rem;
+}
+
+.react-datepicker__input-container .form-control {
+  border-bottom: 1px solid gray !important;
+}
+
+.pump-input {
+  border: 0px !important;
+  border-bottom: 1px solid gray !important;
+}
