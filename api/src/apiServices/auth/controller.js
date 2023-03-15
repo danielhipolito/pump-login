@@ -3,12 +3,12 @@ import { getConnection } from '../../database.js'
 import { createAccessToken, createRefreshToken, decodeToken } from '../../utils/jwt.js'
 
 export const authController = async (req, res) => {
-  const { userName, password } = req.body
-  if (!userName) return res.status(400).send('username is requiered')
+  const { email, password } = req.body
+  if (!email) return res.status(400).send('email is requiered')
   if (!password) return res.status(400).send('password is requiered')
   const db = await getConnection()
 
-  const userF = db.data.users.find((user) => user.userName == userName)
+  const userF = db.data.users.find((user) => user.email == email)
   if (!userF) {
     return res.status(400).send('incorrect password')
   }

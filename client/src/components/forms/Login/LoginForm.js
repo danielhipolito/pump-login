@@ -58,14 +58,14 @@ export const LoginForm = ({onForgot}) => {
             }}
           />
           <form onSubmit={formik.handleSubmit}>
-            <InputError error={formik.errors.userName} />
+            <InputError error={formik.errors.email} />
             <PumpInput
               type="text"
-              placeholder="Enter Username ..."
+              placeholder="Enter email ..."
               className="form-control mb-4 mt-2"
               onChange={formik.handleChange}
-              value={formik.values.userName}
-              name="userName"
+              value={formik.values.email}
+              name="email"
             />
             <InputError error={formik.errors.password} />
             <PumpInput
