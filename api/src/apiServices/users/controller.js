@@ -26,13 +26,13 @@ export const updateProfile = async (req, res) => {
     const basePath = './src/uploads/'
     const { age, eyeColor, name, email, phone, address } = req.body
     let picture = userFound.picture
-    if(req.files) {
+    if (req.files) {
       picture = req.files.picture
       if (userFound.picture) {
         await fs.rename(`${basePath}${userFound.picture}`, `${basePath}${getFilePath(picture)}`, (err) => console.log('err'))
       }
     }
-   
+
     if (age) userFound.age = age
     if (eyeColor) userFound.eyeColor = eyeColor
     if (name) {

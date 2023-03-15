@@ -5,16 +5,16 @@
       "guid": "eab0324c-75ef-49a1-9c49-be2d68f50b96",
       "isActive": true,
       "balance": "$3,585.69",
-      "picture": "avatar/CVWADXZPqcyNm8Cv8_BhriDJ.png",
-      "age": "0030-03-01T16:48:19.257Z",
+      "picture": "http://placehold.it/32x32",
+      "age": 30,
       "eyeColor": "blue",
       "name": {
         "first": "Henderson",
-        "last": "Briggs ht"
+        "last": "Briggs"
       },
       "company": "GEEKNET",
-      "email": "henderson.briggs@geeknet.neta",
-      "password": "$2b$10$.Pf8zW8v2VjlTX9.2DXm/.hYtPsSQqUxZuU4t2XAoJrlqTaVaIq76",
+      "email": "henderson.briggs@geeknet.net",
+      "password": "23derd*334",
       "phone": "+1 (936) 451-3590",
       "address": "121 National Drive, Cotopaxi, Michigan, 8240"
     },
