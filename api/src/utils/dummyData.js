@@ -13,7 +13,7 @@ export default () => [
     },
     company: 'GEEKNET',
     email: 'henderson.briggs@geeknet.net',
-    password: '23derd*334',
+    password: '$2b$10$AaT/ZTEUIBVzT8epVGSHHul5HgymG.nVIVcGnlOfr1rMKXSAQoHEa',
     phone: '+1 (936) 451-3590',
     address: '121 National Drive, Cotopaxi, Michigan, 8240'
   },
@@ -31,7 +31,7 @@ export default () => [
     },
     company: 'ENDIPINE',
     email: 'boyd.small@endipine.biz',
-    password: '_4rhododfj',
+    password: '$2b$10$DRoL8MVExNAZEHzFT8f6pON2fLmgGJL6dNXm1Xjg8vNr1FF32U7.a',
     phone: '+1 (814) 437-3837',
     address: '261 Willow Street, Whipholt, Louisiana, 2879'
   },
@@ -49,7 +49,7 @@ export default () => [
     },
     company: 'POSHOME',
     email: 'lott.kramer@poshome.us',
-    password: '34oii+345',
+    password: '$2b$10$vz7ZK6NpVSTmXrew.W.7HerAq5Eoh1P45GmCeghPi8btIlbt9WNPa',
     phone: '+1 (983) 565-2711',
     address: '743 Ryder Avenue, Marenisco, South Dakota, 4752'
   },
@@ -67,7 +67,7 @@ export default () => [
     },
     company: 'ZILLAR',
     email: 'gibson.duke@zillar.com',
-    password: 'ndfadsf(d',
+    password: '$2b$10$6rAd0ffoAQmMNBPGnGza7ekS5zPIt86GJEIH0qpQAnXDxJ1Qc6eAm',
     phone: '+1 (971) 473-2320',
     address: '110 Roosevelt Place, Salunga, South Carolina, 9434'
   },
@@ -85,7 +85,7 @@ export default () => [
     },
     company: 'WATERBABY',
     email: 'ruby.glenn@waterbaby.co.uk',
-    password: 'red^adl4',
+    password: '$2b$10$bWfP8bybIEDeiepFITxpFOLo3ThVs38ebDwmhvtU7yH4Oc/O81Ifq',
     phone: '+1 (800) 433-3997',
     address: '622 Fanchon Place, Kohatk, Marshall Islands, 8665'
   }

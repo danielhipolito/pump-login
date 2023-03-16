@@ -18,7 +18,7 @@ export const authController = async (req, res) => {
     if (userF.isActive) {
       return res.status(200).send({ access: createAccessToken(userF), refresh: createRefreshToken(userF) })
     }
-    return res.status(401).send({ message: 'unauthorized user or inactive user' })
+    return res.status(401).send('unauthorized user or your profile is inactive')
   } else {
     return res.status(400).send('incorrect password')
   }
