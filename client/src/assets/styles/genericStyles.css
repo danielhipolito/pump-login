@@ -25,6 +25,7 @@ img {
 
 .react-datepicker__input-container .form-control {
   border-bottom: 1px solid gray !important;
+  margin-top: 3% !important;
 }
 
 .pump-input {
