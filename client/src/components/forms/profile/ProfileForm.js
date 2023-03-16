@@ -26,7 +26,7 @@ export const ProfileForm = ({initialData}) => {
   const [startDate, setStartDate] = useState(initialAge);
   const [customInputs, setCustomInputs] = useState({
     phone: phone,
-    age: initialAge,
+    age: age,
   });
   const [isLoading, setIsLoading] = useState(false);
 
