@@ -31,7 +31,7 @@ export const ProfileUpdater = () => {
             textAlign="center"
             className="mb-4"
           >
-            $ {balance}
+            {balance.split('$').join('$ ')}
           </PumpText>
         </div>
       </div>
