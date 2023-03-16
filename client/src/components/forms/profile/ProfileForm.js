@@ -28,6 +28,7 @@ export const ProfileForm = ({initialData}) => {
     phone: phone,
     age: initialAge,
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handlePhoneNumber = (value) => {
     setCustomInputs({...customInputs, ['phone']: value});
@@ -44,6 +45,7 @@ export const ProfileForm = ({initialData}) => {
   const updateProfile = async (formikData) => {
     const fullData = {...formikData, ...customInputs};
     fullData.name = {first: fullData.first, last: fullData.last};
+    setIsLoading(true);
 
     let response;
     try {
@@ -51,6 +53,8 @@ export const ProfileForm = ({initialData}) => {
       console.log(response);
     } catch (err) {
       alert(DEFAULT_ERROR);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -154,15 +158,15 @@ export const ProfileForm = ({initialData}) => {
             style={{minHeight: '60px'}}
           />
         </div>
-        <div className="col-md-6 d-flex-justify-content-center">
-          {1 > 2 ? (
+        <div className="col-md-6 d-flex justify-content-center align-items-center">
+          {isLoading ? (
             <ClipLoader
               color={BRAND_COLORS.primary}
               loading={true}
               size={50}
               aria-label="Loading Spinner"
               data-testid="loader"
-              className="mt-5"
+              className="my-3"
             />
           ) : (
             <PrimaryButton
